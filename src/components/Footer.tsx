@@ -1,7 +1,5 @@
-export const Footer  = () => {
-  return(
-    <div>
-      Footer
-    </div>
-  )
-}
+import { Box } from "@chakra-ui/react";
+
+export const Footer = () => {
+    return <Box maxHeight="5 vh">Footer</Box>;
+};

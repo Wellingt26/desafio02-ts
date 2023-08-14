@@ -1,14 +1,17 @@
-import { Center, ChakraProvider, Input, Box, Button } from "@chakra-ui/react";
-import { Layout } from "./Layout";
-import { Login } from "./Login";
+import { Box, Center } from "@chakra-ui/react";
 
-export const Card = () => {
+export const Card = ({ children }: any) => {
     return (
-        <Box
-            maxHeight="100vh"
-            bgGradient="radial-gradient(circle, rgba(200,8,208,1) 0%, rgba(157,0,214,1) 100%, rgba(213,8,219,1) 100%);"
-        >
-            <Layout children={Login()} />
-        </Box>
+        <Center height="100%">
+            <Box
+                width="500px"
+                height="250px"
+                backgroundColor="#fff"
+                borderRadius="25px"
+                padding=".5rem"
+            >
+                {children}
+            </Box>
+        </Center>
     );
 };
